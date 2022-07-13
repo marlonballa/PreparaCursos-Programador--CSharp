@@ -32,17 +32,17 @@
             this.lblMensagemApresentação = new System.Windows.Forms.Label();
             this.chkPessoaFisica = new System.Windows.Forms.CheckBox();
             this.chkPessoaJuridica = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblNomePessoaFisica = new System.Windows.Forms.Label();
-            this.txtNomePessoaFisica = new System.Windows.Forms.TextBox();
+            this.pnlPessoaFisica = new System.Windows.Forms.Panel();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.lblCPF = new System.Windows.Forms.Label();
+            this.txtNomePessoaFisica = new System.Windows.Forms.TextBox();
+            this.lblNomePessoaFisica = new System.Windows.Forms.Label();
             this.pnlPessoaJuridica = new System.Windows.Forms.Panel();
             this.txtCnpj = new System.Windows.Forms.TextBox();
             this.lblCnpj = new System.Windows.Forms.Label();
             this.txtPessoaJuridica = new System.Windows.Forms.TextBox();
             this.lblNomePessoaJuridica = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.pnlPessoaFisica.SuspendLayout();
             this.pnlPessoaJuridica.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +66,7 @@
             this.chkPessoaFisica.TabIndex = 1;
             this.chkPessoaFisica.Text = "Pessoa Física";
             this.chkPessoaFisica.UseVisualStyleBackColor = true;
+            this.chkPessoaFisica.CheckStateChanged += new System.EventHandler(this.chkPessoaFisica_CheckStateChanged);
             // 
             // chkPessoaJuridica
             // 
@@ -77,36 +78,20 @@
             this.chkPessoaJuridica.TabIndex = 2;
             this.chkPessoaJuridica.Text = "Pessoa Juridíca";
             this.chkPessoaJuridica.UseVisualStyleBackColor = true;
+            this.chkPessoaJuridica.CheckStateChanged += new System.EventHandler(this.chkPessoaJuridica_CheckStateChanged);
             // 
-            // panel1
+            // pnlPessoaFisica
             // 
-            this.panel1.Controls.Add(this.txtCpf);
-            this.panel1.Controls.Add(this.lblCPF);
-            this.panel1.Controls.Add(this.txtNomePessoaFisica);
-            this.panel1.Controls.Add(this.lblNomePessoaFisica);
-            this.panel1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel1.Location = new System.Drawing.Point(49, 74);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 89);
-            this.panel1.TabIndex = 3;
-            // 
-            // lblNomePessoaFisica
-            // 
-            this.lblNomePessoaFisica.AutoSize = true;
-            this.lblNomePessoaFisica.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNomePessoaFisica.Location = new System.Drawing.Point(10, 19);
-            this.lblNomePessoaFisica.Name = "lblNomePessoaFisica";
-            this.lblNomePessoaFisica.Size = new System.Drawing.Size(51, 17);
-            this.lblNomePessoaFisica.TabIndex = 0;
-            this.lblNomePessoaFisica.Text = "Nome:";
-            // 
-            // txtNomePessoaFisica
-            // 
-            this.txtNomePessoaFisica.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNomePessoaFisica.Location = new System.Drawing.Point(59, 16);
-            this.txtNomePessoaFisica.Name = "txtNomePessoaFisica";
-            this.txtNomePessoaFisica.Size = new System.Drawing.Size(100, 25);
-            this.txtNomePessoaFisica.TabIndex = 1;
+            this.pnlPessoaFisica.Controls.Add(this.txtCpf);
+            this.pnlPessoaFisica.Controls.Add(this.lblCPF);
+            this.pnlPessoaFisica.Controls.Add(this.txtNomePessoaFisica);
+            this.pnlPessoaFisica.Controls.Add(this.lblNomePessoaFisica);
+            this.pnlPessoaFisica.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pnlPessoaFisica.Location = new System.Drawing.Point(49, 74);
+            this.pnlPessoaFisica.Name = "pnlPessoaFisica";
+            this.pnlPessoaFisica.Size = new System.Drawing.Size(200, 89);
+            this.pnlPessoaFisica.TabIndex = 3;
+            this.pnlPessoaFisica.Visible = false;
             // 
             // txtCpf
             // 
@@ -126,6 +111,24 @@
             this.lblCPF.TabIndex = 2;
             this.lblCPF.Text = "CPF:";
             // 
+            // txtNomePessoaFisica
+            // 
+            this.txtNomePessoaFisica.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNomePessoaFisica.Location = new System.Drawing.Point(59, 16);
+            this.txtNomePessoaFisica.Name = "txtNomePessoaFisica";
+            this.txtNomePessoaFisica.Size = new System.Drawing.Size(100, 25);
+            this.txtNomePessoaFisica.TabIndex = 1;
+            // 
+            // lblNomePessoaFisica
+            // 
+            this.lblNomePessoaFisica.AutoSize = true;
+            this.lblNomePessoaFisica.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNomePessoaFisica.Location = new System.Drawing.Point(10, 19);
+            this.lblNomePessoaFisica.Name = "lblNomePessoaFisica";
+            this.lblNomePessoaFisica.Size = new System.Drawing.Size(51, 17);
+            this.lblNomePessoaFisica.TabIndex = 0;
+            this.lblNomePessoaFisica.Text = "Nome:";
+            // 
             // pnlPessoaJuridica
             // 
             this.pnlPessoaJuridica.Controls.Add(this.txtCnpj);
@@ -137,6 +140,7 @@
             this.pnlPessoaJuridica.Name = "pnlPessoaJuridica";
             this.pnlPessoaJuridica.Size = new System.Drawing.Size(200, 89);
             this.pnlPessoaJuridica.TabIndex = 4;
+            this.pnlPessoaJuridica.Visible = false;
             // 
             // txtCnpj
             // 
@@ -180,7 +184,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 184);
             this.Controls.Add(this.pnlPessoaJuridica);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlPessoaFisica);
             this.Controls.Add(this.chkPessoaJuridica);
             this.Controls.Add(this.chkPessoaFisica);
             this.Controls.Add(this.lblMensagemApresentação);
@@ -190,8 +194,8 @@
             this.Name = "frmPropriedadeCheckBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Propriedades do CheckBox";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlPessoaFisica.ResumeLayout(false);
+            this.pnlPessoaFisica.PerformLayout();
             this.pnlPessoaJuridica.ResumeLayout(false);
             this.pnlPessoaJuridica.PerformLayout();
             this.ResumeLayout(false);
@@ -204,7 +208,7 @@
         private Label lblMensagemApresentação;
         private CheckBox chkPessoaFisica;
         private CheckBox chkPessoaJuridica;
-        private Panel panel1;
+        private Panel pnlPessoaFisica;
         private TextBox txtCpf;
         private Label lblCPF;
         private TextBox txtNomePessoaFisica;

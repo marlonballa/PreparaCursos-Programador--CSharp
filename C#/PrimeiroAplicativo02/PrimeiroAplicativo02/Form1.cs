@@ -7,12 +7,6 @@ namespace PrimeiroAplicativo02
             InitializeComponent();
         }
 
-        private void btnMostrarMensagem_Click(object sender, EventArgs e)
-        {
-            lblMensagem.Text = "Primeiro Aplicativo com C#";
-            lblMensagem.ForeColor = Color.RoyalBlue;
-        }
-
         private void btnChamarFormulario_Click(object sender, EventArgs e)
         {
             //Instanciando o formulário que deverá aparecer ao clicar nesse botão
@@ -24,6 +18,11 @@ namespace PrimeiroAplicativo02
             //O método ShowDialog() chama e mostra o formulário, mantendo o foco nele. 
             //Sem encerrar o formulário que já estava aberto.
 
+
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
 
         }
     }
