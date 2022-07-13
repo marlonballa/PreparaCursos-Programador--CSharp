@@ -1,0 +1,17 @@
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.csproj.AssemblyReference.cache
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.frmPrincipal.resources
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.csproj.GenerateResource.cache
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.AssemblyInfoInputs.cache
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.AssemblyInfo.cs
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.csproj.CoreCompileInputs.cache
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\bin\Debug\net6.0-windows\PrimeiroAplicativo02.exe
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\bin\Debug\net6.0-windows\PrimeiroAplicativo02.deps.json
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\bin\Debug\net6.0-windows\PrimeiroAplicativo02.runtimeconfig.json
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\bin\Debug\net6.0-windows\PrimeiroAplicativo02.dll
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\bin\Debug\net6.0-windows\PrimeiroAplicativo02.pdb
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.dll
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\refint\PrimeiroAplicativo02.dll
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.pdb
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.genruntimeconfig.cache
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\ref\PrimeiroAplicativo02.dll
