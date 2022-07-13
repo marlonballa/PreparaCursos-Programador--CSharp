@@ -15,3 +15,4 @@ C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplic
 C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.pdb
 C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.genruntimeconfig.cache
 C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\ref\PrimeiroAplicativo02.dll
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo02\PrimeiroAplicativo02\obj\Debug\net6.0-windows\PrimeiroAplicativo02.frmPropriedadeCheckBox.resources
