@@ -23,9 +23,8 @@ namespace PrimeiroAplicativo04
             {
                 pnlPessoaFisica.Visible = true;
                 chkPessoaJuridica.Checked = false;
-            } else
-            {
-                pnlPessoaFisica.Visible = false;
+                pnlPessoaJuridica.Visible = false;
+
             }
         }
 
@@ -35,9 +34,6 @@ namespace PrimeiroAplicativo04
             {
                 pnlPessoaJuridica.Visible = true;
                 chkPessoaFisica.Checked = false;
-            }
-            else
-            {
                 pnlPessoaFisica.Visible = false;
             }
         }

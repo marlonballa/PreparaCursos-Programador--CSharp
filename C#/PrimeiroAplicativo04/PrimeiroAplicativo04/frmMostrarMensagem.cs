@@ -19,8 +19,18 @@ namespace PrimeiroAplicativo04
 
         private void bntMostrarMensagem_Click(object sender, EventArgs e)
         {
-            label1.Text = "BEM-VINDO AO CURSO DE C#";
-            label1.ForeColor = Color.White;
+            lblMensagem.Text = "BEM-VINDO AO CURSO DE C#";
+            lblMensagem.ForeColor = Color.White;
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

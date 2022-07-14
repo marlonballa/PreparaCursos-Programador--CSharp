@@ -33,7 +33,7 @@
             this.btnFechar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.bntMostrarMensagem = new System.Windows.Forms.Button();
-            this.lblMsgSurprise = new System.Windows.Forms.Label();
+            this.lblMensagem = new System.Windows.Forms.Label();
             this.pnlCabecalho.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +63,7 @@
             this.btnMinimizar.TabIndex = 2;
             this.btnMinimizar.Text = "-";
             this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnFechar
             // 
@@ -78,6 +79,7 @@
             this.btnFechar.TabIndex = 1;
             this.btnFechar.Text = "X";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // label1
             // 
@@ -106,15 +108,13 @@
             this.bntMostrarMensagem.UseVisualStyleBackColor = true;
             this.bntMostrarMensagem.Click += new System.EventHandler(this.bntMostrarMensagem_Click);
             // 
-            // lblMsgSurprise
+            // lblMensagem
             // 
-            this.lblMsgSurprise.AutoSize = true;
-            this.lblMsgSurprise.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblMsgSurprise.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblMsgSurprise.Location = new System.Drawing.Point(75, 93);
-            this.lblMsgSurprise.Name = "lblMsgSurprise";
-            this.lblMsgSurprise.Size = new System.Drawing.Size(0, 21);
-            this.lblMsgSurprise.TabIndex = 2;
+            this.lblMensagem.AutoSize = true;
+            this.lblMensagem.Location = new System.Drawing.Point(91, 116);
+            this.lblMensagem.Name = "lblMensagem";
+            this.lblMensagem.Size = new System.Drawing.Size(0, 15);
+            this.lblMensagem.TabIndex = 3;
             // 
             // frmMostrarMensagem
             // 
@@ -122,7 +122,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(334, 281);
-            this.Controls.Add(this.lblMsgSurprise);
+            this.Controls.Add(this.lblMensagem);
             this.Controls.Add(this.bntMostrarMensagem);
             this.Controls.Add(this.pnlCabecalho);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -143,6 +143,6 @@
         private Button btnFechar;
         private Button btnMinimizar;
         private Button bntMostrarMensagem;
-        private Label lblMsgSurprise;
+        private Label lblMensagem;
     }
 }

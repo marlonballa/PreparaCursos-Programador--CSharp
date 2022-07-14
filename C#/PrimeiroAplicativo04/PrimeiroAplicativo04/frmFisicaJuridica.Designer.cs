@@ -52,9 +52,9 @@
             this.lblTextPeople.Location = new System.Drawing.Point(16, 35);
             this.lblTextPeople.Margin = new System.Windows.Forms.Padding(0);
             this.lblTextPeople.Name = "lblTextPeople";
-            this.lblTextPeople.Size = new System.Drawing.Size(134, 25);
+            this.lblTextPeople.Size = new System.Drawing.Size(366, 25);
             this.lblTextPeople.TabIndex = 0;
-            this.lblTextPeople.Text = "Quem é você?";
+            this.lblTextPeople.Text = "Você é: Pessoa Física ou Pessoa Jurídica?";
             // 
             // chkPessoaFisica
             // 
