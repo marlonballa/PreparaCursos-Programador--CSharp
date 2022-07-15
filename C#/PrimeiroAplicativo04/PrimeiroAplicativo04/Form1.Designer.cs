@@ -65,6 +65,7 @@
             this.btnVisualizadorImagens.TabIndex = 2;
             this.btnVisualizadorImagens.Text = "Visualizador de Imagens";
             this.btnVisualizadorImagens.UseVisualStyleBackColor = true;
+            this.btnVisualizadorImagens.Click += new System.EventHandler(this.btnVisualizadorImagens_Click);
             // 
             // frmPrincipal
             // 

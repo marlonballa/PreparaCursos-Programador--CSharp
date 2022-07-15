@@ -23,5 +23,11 @@ namespace PrimeiroAplicativo04
             frmFisicaJuridica frmFisicaJuridica = new frmFisicaJuridica();
             frmFisicaJuridica.ShowDialog();
         }
+
+        private void btnVisualizadorImagens_Click(object sender, EventArgs e)
+        {
+            frmVisualizadorImagens frmVisualizadorImagens = new frmVisualizadorImagens();
+            frmVisualizadorImagens.ShowDialog();   
+        }
     }
 }

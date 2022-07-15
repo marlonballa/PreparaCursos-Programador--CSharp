@@ -17,3 +17,5 @@ C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplic
 C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo04\PrimeiroAplicativo04\obj\Debug\net6.0-windows\PrimeiroAplicativo04.genruntimeconfig.cache
 C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo04\PrimeiroAplicativo04\obj\Debug\net6.0-windows\ref\PrimeiroAplicativo04.dll
 C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo04\PrimeiroAplicativo04\obj\Debug\net6.0-windows\PrimeiroAplicativo04.frmFisicaJuridica.resources
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo04\PrimeiroAplicativo04\obj\Debug\net6.0-windows\PrimeiroAplicativo04.frmVisualizadorImagens.resources
+C:\Users\marlo\OneDrive\Documentos\Programação\Prepara Cursos\C#\PrimeiroAplicativo04\PrimeiroAplicativo04\obj\Debug\net6.0-windows\PrimeiroAplicativo04.Properties.Resources.resources
