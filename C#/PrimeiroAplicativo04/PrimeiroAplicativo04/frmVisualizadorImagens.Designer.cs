@@ -69,6 +69,7 @@
             this.rbNormal.TabStop = true;
             this.rbNormal.Text = "Normal";
             this.rbNormal.UseVisualStyleBackColor = true;
+            this.rbNormal.CheckedChanged += new System.EventHandler(this.rbNormal_CheckedChanged);
             // 
             // rbStretch
             // 
@@ -80,6 +81,7 @@
             this.rbStretch.TabStop = true;
             this.rbStretch.Text = "Stretch";
             this.rbStretch.UseVisualStyleBackColor = true;
+            this.rbStretch.CheckedChanged += new System.EventHandler(this.rbStretch_CheckedChanged);
             // 
             // btnShowImage
             // 
@@ -99,6 +101,7 @@
             this.btnCleanImage.TabIndex = 5;
             this.btnCleanImage.Text = "Limpar Imagem";
             this.btnCleanImage.UseVisualStyleBackColor = true;
+            this.btnCleanImage.Click += new System.EventHandler(this.btnCleanImage_Click);
             // 
             // ofdImagens
             // 
@@ -121,6 +124,7 @@
             this.Name = "frmVisualizadorImagens";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Visualizador de Imagens";
+            this.Load += new System.EventHandler(this.frmVisualizadorImagens_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picboxMoldura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxImagem)).EndInit();
             this.ResumeLayout(false);
