@@ -32,11 +32,12 @@
             this.btnMostrarMensagem = new System.Windows.Forms.Button();
             this.btnFisJur = new System.Windows.Forms.Button();
             this.btnVisualizadorImagens = new System.Windows.Forms.Button();
+            this.btnTaduada = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMostrarMensagem
             // 
-            this.btnMostrarMensagem.Location = new System.Drawing.Point(114, 49);
+            this.btnMostrarMensagem.Location = new System.Drawing.Point(13, 44);
             this.btnMostrarMensagem.Margin = new System.Windows.Forms.Padding(4);
             this.btnMostrarMensagem.Name = "btnMostrarMensagem";
             this.btnMostrarMensagem.Size = new System.Drawing.Size(200, 59);
@@ -47,7 +48,7 @@
             // 
             // btnFisJur
             // 
-            this.btnFisJur.Location = new System.Drawing.Point(114, 116);
+            this.btnFisJur.Location = new System.Drawing.Point(13, 111);
             this.btnFisJur.Margin = new System.Windows.Forms.Padding(4);
             this.btnFisJur.Name = "btnFisJur";
             this.btnFisJur.Size = new System.Drawing.Size(200, 59);
@@ -58,7 +59,7 @@
             // 
             // btnVisualizadorImagens
             // 
-            this.btnVisualizadorImagens.Location = new System.Drawing.Point(114, 183);
+            this.btnVisualizadorImagens.Location = new System.Drawing.Point(13, 178);
             this.btnVisualizadorImagens.Margin = new System.Windows.Forms.Padding(4);
             this.btnVisualizadorImagens.Name = "btnVisualizadorImagens";
             this.btnVisualizadorImagens.Size = new System.Drawing.Size(200, 59);
@@ -67,11 +68,23 @@
             this.btnVisualizadorImagens.UseVisualStyleBackColor = true;
             this.btnVisualizadorImagens.Click += new System.EventHandler(this.btnVisualizadorImagens_Click);
             // 
+            // btnTaduada
+            // 
+            this.btnTaduada.Location = new System.Drawing.Point(221, 111);
+            this.btnTaduada.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTaduada.Name = "btnTaduada";
+            this.btnTaduada.Size = new System.Drawing.Size(200, 59);
+            this.btnTaduada.TabIndex = 3;
+            this.btnTaduada.Text = "Tabuada";
+            this.btnTaduada.UseVisualStyleBackColor = true;
+            this.btnTaduada.Click += new System.EventHandler(this.btnTaduada_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 311);
+            this.Controls.Add(this.btnTaduada);
             this.Controls.Add(this.btnVisualizadorImagens);
             this.Controls.Add(this.btnFisJur);
             this.Controls.Add(this.btnMostrarMensagem);
@@ -92,5 +105,6 @@
         private Button btnMostrarMensagem;
         private Button btnFisJur;
         private Button btnVisualizadorImagens;
+        private Button btnTaduada;
     }
 }

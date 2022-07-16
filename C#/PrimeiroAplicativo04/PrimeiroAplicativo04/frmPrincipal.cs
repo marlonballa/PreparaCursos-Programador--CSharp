@@ -29,5 +29,11 @@ namespace PrimeiroAplicativo04
             frmVisualizadorImagens frmVisualizadorImagens = new frmVisualizadorImagens();
             frmVisualizadorImagens.ShowDialog();   
         }
+
+        private void btnTaduada_Click(object sender, EventArgs e)
+        {
+            frmTabuada frmTabuada = new frmTabuada();
+            frmTabuada.ShowDialog();
+        }
     }
 }
