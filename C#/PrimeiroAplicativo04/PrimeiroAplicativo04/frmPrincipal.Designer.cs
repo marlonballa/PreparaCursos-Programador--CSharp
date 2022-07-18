@@ -37,45 +37,61 @@
             // 
             // btnMostrarMensagem
             // 
-            this.btnMostrarMensagem.Location = new System.Drawing.Point(13, 44);
+            this.btnMostrarMensagem.Image = global::PrimeiroAplicativo04.Properties.Resources.chatting;
+            this.btnMostrarMensagem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMostrarMensagem.Location = new System.Drawing.Point(13, 27);
             this.btnMostrarMensagem.Margin = new System.Windows.Forms.Padding(4);
             this.btnMostrarMensagem.Name = "btnMostrarMensagem";
-            this.btnMostrarMensagem.Size = new System.Drawing.Size(200, 59);
+            this.btnMostrarMensagem.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.btnMostrarMensagem.Size = new System.Drawing.Size(200, 76);
             this.btnMostrarMensagem.TabIndex = 0;
             this.btnMostrarMensagem.Text = "Mostrar Mensagem";
+            this.btnMostrarMensagem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMostrarMensagem.UseVisualStyleBackColor = true;
             this.btnMostrarMensagem.Click += new System.EventHandler(this.btnMostrarMensagem_Click);
             // 
             // btnFisJur
             // 
+            this.btnFisJur.Image = global::PrimeiroAplicativo04.Properties.Resources.caixa_de_selecao;
+            this.btnFisJur.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnFisJur.Location = new System.Drawing.Point(13, 111);
             this.btnFisJur.Margin = new System.Windows.Forms.Padding(4);
             this.btnFisJur.Name = "btnFisJur";
-            this.btnFisJur.Size = new System.Drawing.Size(200, 59);
+            this.btnFisJur.Padding = new System.Windows.Forms.Padding(0, 10, 0, 15);
+            this.btnFisJur.Size = new System.Drawing.Size(200, 76);
             this.btnFisJur.TabIndex = 1;
             this.btnFisJur.Text = "Física x Jurídica";
+            this.btnFisJur.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnFisJur.UseVisualStyleBackColor = true;
             this.btnFisJur.Click += new System.EventHandler(this.btnFisJur_Click);
             // 
             // btnVisualizadorImagens
             // 
-            this.btnVisualizadorImagens.Location = new System.Drawing.Point(13, 178);
+            this.btnVisualizadorImagens.Image = global::PrimeiroAplicativo04.Properties.Resources.galeria_de_imagens;
+            this.btnVisualizadorImagens.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnVisualizadorImagens.Location = new System.Drawing.Point(13, 195);
             this.btnVisualizadorImagens.Margin = new System.Windows.Forms.Padding(4);
             this.btnVisualizadorImagens.Name = "btnVisualizadorImagens";
-            this.btnVisualizadorImagens.Size = new System.Drawing.Size(200, 59);
+            this.btnVisualizadorImagens.Padding = new System.Windows.Forms.Padding(0, 10, 0, 15);
+            this.btnVisualizadorImagens.Size = new System.Drawing.Size(200, 76);
             this.btnVisualizadorImagens.TabIndex = 2;
             this.btnVisualizadorImagens.Text = "Visualizador de Imagens";
+            this.btnVisualizadorImagens.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnVisualizadorImagens.UseVisualStyleBackColor = true;
             this.btnVisualizadorImagens.Click += new System.EventHandler(this.btnVisualizadorImagens_Click);
             // 
             // btnTaduada
             // 
+            this.btnTaduada.Image = global::PrimeiroAplicativo04.Properties.Resources.calculadora;
+            this.btnTaduada.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnTaduada.Location = new System.Drawing.Point(221, 111);
             this.btnTaduada.Margin = new System.Windows.Forms.Padding(4);
             this.btnTaduada.Name = "btnTaduada";
-            this.btnTaduada.Size = new System.Drawing.Size(200, 59);
+            this.btnTaduada.Padding = new System.Windows.Forms.Padding(0, 10, 0, 15);
+            this.btnTaduada.Size = new System.Drawing.Size(200, 76);
             this.btnTaduada.TabIndex = 3;
             this.btnTaduada.Text = "Tabuada";
+            this.btnTaduada.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTaduada.UseVisualStyleBackColor = true;
             this.btnTaduada.Click += new System.EventHandler(this.btnTaduada_Click);
             // 
