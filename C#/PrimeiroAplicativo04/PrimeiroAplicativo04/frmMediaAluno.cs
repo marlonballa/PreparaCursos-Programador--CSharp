@@ -26,5 +26,32 @@ namespace PrimeiroAplicativo04
         {
 
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal.Show();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCalcular_MouseHover(object sender, EventArgs e)
+        {
+
+        }
     }
 }
