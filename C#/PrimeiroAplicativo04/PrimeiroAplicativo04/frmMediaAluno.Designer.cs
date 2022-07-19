@@ -43,11 +43,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panelMediaFinal = new System.Windows.Forms.Panel();
+            this.txtMediaFinal = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.pnlAproveitamento = new System.Windows.Forms.Panel();
+            this.txtAproveitamento = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -56,8 +56,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNotaCorte)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelMediaFinal.SuspendLayout();
+            this.pnlAproveitamento.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -109,9 +109,9 @@
             this.cboPesoNota1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPesoNota1.FormattingEnabled = true;
             this.cboPesoNota1.Items.AddRange(new object[] {
-            "20%;",
-            "30%",
-            "50%"});
+            "0,2",
+            "0,3",
+            "0,5"});
             this.cboPesoNota1.Location = new System.Drawing.Point(151, 154);
             this.cboPesoNota1.Name = "cboPesoNota1";
             this.cboPesoNota1.Size = new System.Drawing.Size(112, 23);
@@ -122,9 +122,9 @@
             this.cboPesoNota2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPesoNota2.FormattingEnabled = true;
             this.cboPesoNota2.Items.AddRange(new object[] {
-            "20%;",
-            "30%",
-            "50%"});
+            "0,2",
+            "0,3",
+            "0,5"});
             this.cboPesoNota2.Location = new System.Drawing.Point(269, 154);
             this.cboPesoNota2.Name = "cboPesoNota2";
             this.cboPesoNota2.Size = new System.Drawing.Size(112, 23);
@@ -135,9 +135,9 @@
             this.cboPesoTrabalho.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPesoTrabalho.FormattingEnabled = true;
             this.cboPesoTrabalho.Items.AddRange(new object[] {
-            "20%;",
-            "30%",
-            "50%"});
+            "0,2",
+            "0,3",
+            "0,5"});
             this.cboPesoTrabalho.Location = new System.Drawing.Point(387, 154);
             this.cboPesoTrabalho.Name = "cboPesoTrabalho";
             this.cboPesoTrabalho.Size = new System.Drawing.Size(112, 23);
@@ -221,6 +221,7 @@
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             this.btnCalcular.MouseHover += new System.EventHandler(this.btnCalcular_MouseHover);
             // 
             // btnLimpar
@@ -244,26 +245,28 @@
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // panel2
+            // panelMediaFinal
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(151, 241);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(171, 71);
-            this.panel2.TabIndex = 8;
+            this.panelMediaFinal.BackColor = System.Drawing.Color.Black;
+            this.panelMediaFinal.Controls.Add(this.txtMediaFinal);
+            this.panelMediaFinal.Controls.Add(this.label3);
+            this.panelMediaFinal.Location = new System.Drawing.Point(151, 241);
+            this.panelMediaFinal.Name = "panelMediaFinal";
+            this.panelMediaFinal.Size = new System.Drawing.Size(171, 71);
+            this.panelMediaFinal.TabIndex = 8;
+            this.panelMediaFinal.Visible = false;
             // 
-            // label2
+            // txtMediaFinal
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(62, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 45);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "10";
+            this.txtMediaFinal.BackColor = System.Drawing.Color.Black;
+            this.txtMediaFinal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMediaFinal.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtMediaFinal.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtMediaFinal.Location = new System.Drawing.Point(34, 24);
+            this.txtMediaFinal.Name = "txtMediaFinal";
+            this.txtMediaFinal.Size = new System.Drawing.Size(100, 36);
+            this.txtMediaFinal.TabIndex = 1;
+            this.txtMediaFinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -271,30 +274,32 @@
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Location = new System.Drawing.Point(50, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 15);
+            this.label3.Size = new System.Drawing.Size(68, 15);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Nota de Corte";
+            this.label3.Text = "Média Final";
             // 
-            // panel3
+            // pnlAproveitamento
             // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(328, 241);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(171, 71);
-            this.panel3.TabIndex = 9;
+            this.pnlAproveitamento.BackColor = System.Drawing.Color.Black;
+            this.pnlAproveitamento.Controls.Add(this.txtAproveitamento);
+            this.pnlAproveitamento.Controls.Add(this.label5);
+            this.pnlAproveitamento.Location = new System.Drawing.Point(328, 241);
+            this.pnlAproveitamento.Name = "pnlAproveitamento";
+            this.pnlAproveitamento.Size = new System.Drawing.Size(171, 71);
+            this.pnlAproveitamento.TabIndex = 9;
+            this.pnlAproveitamento.Visible = false;
             // 
-            // label4
+            // txtAproveitamento
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(55, 19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 45);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "10";
+            this.txtAproveitamento.BackColor = System.Drawing.Color.Black;
+            this.txtAproveitamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAproveitamento.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtAproveitamento.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtAproveitamento.Location = new System.Drawing.Point(33, 24);
+            this.txtAproveitamento.Name = "txtAproveitamento";
+            this.txtAproveitamento.Size = new System.Drawing.Size(100, 36);
+            this.txtAproveitamento.TabIndex = 2;
+            this.txtAproveitamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -374,8 +379,8 @@
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlAproveitamento);
+            this.Controls.Add(this.panelMediaFinal);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.panel1);
@@ -396,10 +401,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNotaCorte)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panelMediaFinal.ResumeLayout(false);
+            this.panelMediaFinal.PerformLayout();
+            this.pnlAproveitamento.ResumeLayout(false);
+            this.pnlAproveitamento.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,16 +425,16 @@
         private Label label1;
         private Button btnCalcular;
         private Button btnLimpar;
-        private Panel panel2;
-        private Label label2;
+        private Panel panelMediaFinal;
         private Label label3;
-        private Panel panel3;
-        private Label label4;
+        private Panel pnlAproveitamento;
         private Label label5;
         private NumericUpDown numNotaCorte;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private Button btnMinimizar;
         private Button btnFechar;
+        private TextBox txtMediaFinal;
+        private TextBox txtAproveitamento;
     }
 }
