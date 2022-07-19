@@ -33,6 +33,7 @@
             this.btnFisJur = new System.Windows.Forms.Button();
             this.btnVisualizadorImagens = new System.Windows.Forms.Button();
             this.btnTaduada = new System.Windows.Forms.Button();
+            this.btnMediaAluno = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMostrarMensagem
@@ -95,11 +96,27 @@
             this.btnTaduada.UseVisualStyleBackColor = true;
             this.btnTaduada.Click += new System.EventHandler(this.btnTaduada_Click);
             // 
+            // btnMediaAluno
+            // 
+            this.btnMediaAluno.Image = global::PrimeiroAplicativo04.Properties.Resources.calculadora;
+            this.btnMediaAluno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMediaAluno.Location = new System.Drawing.Point(221, 195);
+            this.btnMediaAluno.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMediaAluno.Name = "btnMediaAluno";
+            this.btnMediaAluno.Padding = new System.Windows.Forms.Padding(0, 10, 0, 15);
+            this.btnMediaAluno.Size = new System.Drawing.Size(200, 76);
+            this.btnMediaAluno.TabIndex = 4;
+            this.btnMediaAluno.Text = "Média do Aluno";
+            this.btnMediaAluno.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMediaAluno.UseVisualStyleBackColor = true;
+            this.btnMediaAluno.Click += new System.EventHandler(this.btnMediaAluno_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 311);
+            this.Controls.Add(this.btnMediaAluno);
             this.Controls.Add(this.btnTaduada);
             this.Controls.Add(this.btnVisualizadorImagens);
             this.Controls.Add(this.btnFisJur);
@@ -122,5 +139,6 @@
         private Button btnFisJur;
         private Button btnVisualizadorImagens;
         private Button btnTaduada;
+        private Button btnMediaAluno;
     }
 }

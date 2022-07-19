@@ -35,5 +35,11 @@ namespace PrimeiroAplicativo04
             frmTabuada frmTabuada = new frmTabuada();
             frmTabuada.ShowDialog();
         }
+
+        private void btnMediaAluno_Click(object sender, EventArgs e)
+        {
+            frmMediaAluno frmMediaAluno = new frmMediaAluno();
+            frmMediaAluno.ShowDialog();
+        }
     }
 }
