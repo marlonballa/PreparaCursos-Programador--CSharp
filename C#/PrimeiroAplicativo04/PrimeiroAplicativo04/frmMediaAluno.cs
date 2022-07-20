@@ -29,7 +29,15 @@ namespace PrimeiroAplicativo04
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-
+            foreach (Control Componente in this.Controls)
+            {
+                if (Componente is TextBox) { (Componente as TextBox).Clear(); }
+                else if (Componente is ComboBox) { (Componente as ComboBox).SelectedIndex = -1; }
+                else if (Componente is NumericUpDown) { (Componente as NumericUpDown).Value = 5; }
+                else if (Componente is Panel) { (Componente as Panel).Visible = false; }
+                else if (Componente is GroupBox) { (Componente as GroupBox).Visible = false; }
+            }
+            pnlNotaCorte.Visible = true;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

@@ -38,7 +38,7 @@
             this.cboPesoTrabalho = new System.Windows.Forms.ComboBox();
             this.txtQtdAulas = new System.Windows.Forms.TextBox();
             this.txtQtdFaltas = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlNotaCorte = new System.Windows.Forms.Panel();
             this.numNotaCorte = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
@@ -56,7 +56,7 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnlNotaCorte.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNotaCorte)).BeginInit();
             this.panelMediaFinal.SuspendLayout();
             this.pnlAproveitamento.SuspendLayout();
@@ -73,7 +73,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // txtNota1
             // 
@@ -164,14 +163,14 @@
             this.txtQtdFaltas.Size = new System.Drawing.Size(230, 23);
             this.txtQtdFaltas.TabIndex = 7;
             // 
-            // panel1
+            // pnlNotaCorte
             // 
-            this.panel1.Controls.Add(this.numNotaCorte);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(387, 183);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(112, 52);
-            this.panel1.TabIndex = 7;
+            this.pnlNotaCorte.Controls.Add(this.numNotaCorte);
+            this.pnlNotaCorte.Controls.Add(this.label1);
+            this.pnlNotaCorte.Location = new System.Drawing.Point(387, 183);
+            this.pnlNotaCorte.Name = "pnlNotaCorte";
+            this.pnlNotaCorte.Size = new System.Drawing.Size(112, 52);
+            this.pnlNotaCorte.TabIndex = 7;
             // 
             // numNotaCorte
             // 
@@ -407,7 +406,7 @@
             this.Controls.Add(this.panelMediaFinal);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlNotaCorte);
             this.Controls.Add(this.txtQtdFaltas);
             this.Controls.Add(this.txtQtdAulas);
             this.Controls.Add(this.cboPesoTrabalho);
@@ -424,8 +423,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Média Aluno";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlNotaCorte.ResumeLayout(false);
+            this.pnlNotaCorte.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNotaCorte)).EndInit();
             this.panelMediaFinal.ResumeLayout(false);
             this.panelMediaFinal.PerformLayout();
@@ -451,7 +450,7 @@
         private ComboBox cboPesoTrabalho;
         private TextBox txtQtdAulas;
         private TextBox txtQtdFaltas;
-        private Panel panel1;
+        private Panel pnlNotaCorte;
         private Label label1;
         private Button btnCalcular;
         private Button btnLimpar;
