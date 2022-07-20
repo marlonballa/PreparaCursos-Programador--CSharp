@@ -49,8 +49,10 @@
             this.pnlAproveitamento = new System.Windows.Forms.Panel();
             this.txtAproveitamento = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbSituacao = new System.Windows.Forms.GroupBox();
+            this.lblSituacao = new System.Windows.Forms.Label();
+            this.gbRecuperacao = new System.Windows.Forms.GroupBox();
+            this.txtRecuperacao = new System.Windows.Forms.TextBox();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -58,6 +60,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numNotaCorte)).BeginInit();
             this.panelMediaFinal.SuspendLayout();
             this.pnlAproveitamento.SuspendLayout();
+            this.gbSituacao.SuspendLayout();
+            this.gbRecuperacao.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -311,29 +315,51 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Aproveitamento";
             // 
-            // groupBox1
+            // gbSituacao
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(187)))), ((int)(((byte)(107)))));
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox1.Location = new System.Drawing.Point(151, 410);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(171, 67);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Situação";
+            this.gbSituacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(187)))), ((int)(((byte)(107)))));
+            this.gbSituacao.Controls.Add(this.lblSituacao);
+            this.gbSituacao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gbSituacao.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.gbSituacao.Location = new System.Drawing.Point(151, 410);
+            this.gbSituacao.Name = "gbSituacao";
+            this.gbSituacao.Size = new System.Drawing.Size(348, 70);
+            this.gbSituacao.TabIndex = 16;
+            this.gbSituacao.TabStop = false;
+            this.gbSituacao.Text = "Situação";
+            this.gbSituacao.Visible = false;
             // 
-            // groupBox2
+            // lblSituacao
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(104)))), ((int)(((byte)(105)))));
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox2.Location = new System.Drawing.Point(328, 410);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(171, 67);
-            this.groupBox2.TabIndex = 17;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Recuperação";
+            this.lblSituacao.AutoSize = true;
+            this.lblSituacao.Font = new System.Drawing.Font("Segoe UI Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSituacao.Location = new System.Drawing.Point(12, 21);
+            this.lblSituacao.Name = "lblSituacao";
+            this.lblSituacao.Size = new System.Drawing.Size(148, 37);
+            this.lblSituacao.TabIndex = 0;
+            this.lblSituacao.Text = "Aprovado";
+            this.lblSituacao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gbRecuperacao
+            // 
+            this.gbRecuperacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(134)))), ((int)(((byte)(4)))));
+            this.gbRecuperacao.Controls.Add(this.txtRecuperacao);
+            this.gbRecuperacao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gbRecuperacao.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gbRecuperacao.Location = new System.Drawing.Point(328, 410);
+            this.gbRecuperacao.Name = "gbRecuperacao";
+            this.gbRecuperacao.Size = new System.Drawing.Size(171, 70);
+            this.gbRecuperacao.TabIndex = 17;
+            this.gbRecuperacao.TabStop = false;
+            this.gbRecuperacao.Text = "Recuperação";
+            this.gbRecuperacao.Visible = false;
+            // 
+            // txtRecuperacao
+            // 
+            this.txtRecuperacao.Location = new System.Drawing.Point(6, 28);
+            this.txtRecuperacao.Name = "txtRecuperacao";
+            this.txtRecuperacao.Size = new System.Drawing.Size(159, 23);
+            this.txtRecuperacao.TabIndex = 0;
             // 
             // btnMinimizar
             // 
@@ -377,8 +403,6 @@
             this.ClientSize = new System.Drawing.Size(634, 501);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnFechar);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pnlAproveitamento);
             this.Controls.Add(this.panelMediaFinal);
             this.Controls.Add(this.btnLimpar);
@@ -393,6 +417,8 @@
             this.Controls.Add(this.txtNota2);
             this.Controls.Add(this.txtNota1);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.gbRecuperacao);
+            this.Controls.Add(this.gbSituacao);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMediaAluno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -405,6 +431,10 @@
             this.panelMediaFinal.PerformLayout();
             this.pnlAproveitamento.ResumeLayout(false);
             this.pnlAproveitamento.PerformLayout();
+            this.gbSituacao.ResumeLayout(false);
+            this.gbSituacao.PerformLayout();
+            this.gbRecuperacao.ResumeLayout(false);
+            this.gbRecuperacao.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,11 +460,13 @@
         private Panel pnlAproveitamento;
         private Label label5;
         private NumericUpDown numNotaCorte;
-        private GroupBox groupBox1;
-        private GroupBox groupBox2;
+        private GroupBox gbSituacao;
+        private GroupBox gbRecuperacao;
         private Button btnMinimizar;
         private Button btnFechar;
         private TextBox txtMediaFinal;
         private TextBox txtAproveitamento;
+        private TextBox txtRecuperacao;
+        private Label lblSituacao;
     }
 }

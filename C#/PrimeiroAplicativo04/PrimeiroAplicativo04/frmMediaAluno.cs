@@ -97,6 +97,63 @@ namespace PrimeiroAplicativo04
                 panelMediaFinal.Visible = true;
                 pnlAproveitamento.Visible = true;
 
+            //++++++++++ INÍCIO: ALUNO APROVADO, EM RECUPERAÇÃO OU REPROVADO ++++++++++
+                if (txtRecuperacao.Text == "")
+                {
+                    if(Media >= Convert.ToDouble(numNotaCorte.Value) && PorcentagemPresenca >= 75)
+                    {
+                        gbSituacao.Visible = true;
+                    } else if (Media <= 2.5 || PorcentagemPresenca < 75)
+                        {
+                            lblSituacao.Text = "Reprovado";
+                            gbSituacao.Size = new Size(348, 70);
+                            gbSituacao.BackColor = Color.FromArgb(235, 104, 105);
+                            gbSituacao.Visible = true;
+                            gbRecuperacao.Visible = false;
+                        } else
+                            {
+                                lblSituacao.Text = "Recuperação";
+                                lblSituacao.Font = new Font("Segoe UI Black", 16); 
+                                gbSituacao.BackColor = Color.FromArgb(201, 134, 4);
+                                gbSituacao.Size = new Size(171, 70);
+                                gbSituacao.Visible = true;
+                                gbRecuperacao.Visible = true;
+                            }
+                }
+                //++++++++++ INÍCIO: NOVA MÉDIA (COM NOTA DA RECUPERAÇÃO) ++++++++++
+                else
+                    {
+                        //Calcula a nova média do aluno
+                        Media = (Media + Convert.ToDouble(txtRecuperacao.Text)) / 2;
+                        //Calcula o novo aproveitamento do aluno
+                        Aproveitamento = (Media * 10 + PorcentagemPresenca) / 2;
+                        //Mostra o novo aproveitamento e a média final
+                        txtAproveitamento.Text = Convert.ToString(Aproveitamento) + "%";
+                        txtMediaFinal.Text = Media.ToString();
+
+                        gbSituacao.Size = new Size(348, 70);
+
+                        //Para alunos que ficaram de recuperação a nota de corte é 5
+                        if (Media >= 5)
+                            {
+                                lblSituacao.Text = "Aprovado";                            
+                                gbSituacao.BackColor = Color.FromArgb(56, 187, 107);
+                                gbSituacao.Visible = true;
+                                gbRecuperacao.Visible = false;
+                                txtRecuperacao.Text = "";
+
+                            }
+                        else
+                            {
+                                lblSituacao.Text = "Reprovado";
+                                gbSituacao.BackColor = Color.FromArgb(235, 104, 105);
+                                txtRecuperacao.Text = "";
+                                gbSituacao.Visible = true;
+                                gbRecuperacao.Visible = false;
+                            }                        
+                    }
+                //++++++++++ FIM: NOVA MÉDIA (COM NOTA DA RECUPERAÇÃO) ++++++++++
+            //++++++++++ FIM: ALUNO APROVADO, EM RECUPERAÇÃO OU REPROVADO ++++++++++
 
 
         }
