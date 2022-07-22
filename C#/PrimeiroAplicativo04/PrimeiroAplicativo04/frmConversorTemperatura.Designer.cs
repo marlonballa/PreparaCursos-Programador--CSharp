@@ -33,18 +33,18 @@
             this.rbCelsius = new System.Windows.Forms.RadioButton();
             this.btnConverter = new System.Windows.Forms.Button();
             this.txtValor = new System.Windows.Forms.TextBox();
-            this.gpEntrada = new System.Windows.Forms.GroupBox();
-            this.rbFarenheit = new System.Windows.Forms.RadioButton();
+            this.gbEntrada = new System.Windows.Forms.GroupBox();
             this.rbKelvin = new System.Windows.Forms.RadioButton();
-            this.gpSaida = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbFarenheit = new System.Windows.Forms.RadioButton();
+            this.gbSaida = new System.Windows.Forms.GroupBox();
+            this.rbKelvinSaida = new System.Windows.Forms.RadioButton();
+            this.rbFarenheitSaida = new System.Windows.Forms.RadioButton();
             this.rbCelsiusSaida = new System.Windows.Forms.RadioButton();
             this.lblResultado = new System.Windows.Forms.Label();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.gpEntrada.SuspendLayout();
-            this.gpSaida.SuspendLayout();
+            this.gbEntrada.SuspendLayout();
+            this.gbSaida.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblValor
@@ -75,6 +75,7 @@
             this.btnConverter.TabIndex = 2;
             this.btnConverter.Text = "Converter";
             this.btnConverter.UseVisualStyleBackColor = true;
+            this.btnConverter.Click += new System.EventHandler(this.btnConverter_Click);
             // 
             // txtValor
             // 
@@ -84,17 +85,28 @@
             this.txtValor.Size = new System.Drawing.Size(330, 23);
             this.txtValor.TabIndex = 3;
             // 
-            // gpEntrada
+            // gbEntrada
             // 
-            this.gpEntrada.Controls.Add(this.rbKelvin);
-            this.gpEntrada.Controls.Add(this.rbFarenheit);
-            this.gpEntrada.Controls.Add(this.rbCelsius);
-            this.gpEntrada.Location = new System.Drawing.Point(79, 75);
-            this.gpEntrada.Name = "gpEntrada";
-            this.gpEntrada.Size = new System.Drawing.Size(141, 115);
-            this.gpEntrada.TabIndex = 4;
-            this.gpEntrada.TabStop = false;
-            this.gpEntrada.Text = "Entrada";
+            this.gbEntrada.Controls.Add(this.rbKelvin);
+            this.gbEntrada.Controls.Add(this.rbFarenheit);
+            this.gbEntrada.Controls.Add(this.rbCelsius);
+            this.gbEntrada.Location = new System.Drawing.Point(76, 68);
+            this.gbEntrada.Name = "gbEntrada";
+            this.gbEntrada.Size = new System.Drawing.Size(141, 115);
+            this.gbEntrada.TabIndex = 4;
+            this.gbEntrada.TabStop = false;
+            this.gbEntrada.Text = "Entrada";
+            // 
+            // rbKelvin
+            // 
+            this.rbKelvin.AutoSize = true;
+            this.rbKelvin.Location = new System.Drawing.Point(20, 82);
+            this.rbKelvin.Name = "rbKelvin";
+            this.rbKelvin.Size = new System.Drawing.Size(57, 19);
+            this.rbKelvin.TabIndex = 3;
+            this.rbKelvin.TabStop = true;
+            this.rbKelvin.Text = "Kelvin";
+            this.rbKelvin.UseVisualStyleBackColor = true;
             // 
             // rbFarenheit
             // 
@@ -108,51 +120,40 @@
             this.rbFarenheit.UseVisualStyleBackColor = true;
             this.rbFarenheit.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // rbKelvin
+            // gbSaida
             // 
-            this.rbKelvin.AutoSize = true;
-            this.rbKelvin.Location = new System.Drawing.Point(20, 82);
-            this.rbKelvin.Name = "rbKelvin";
-            this.rbKelvin.Size = new System.Drawing.Size(57, 19);
-            this.rbKelvin.TabIndex = 3;
-            this.rbKelvin.TabStop = true;
-            this.rbKelvin.Text = "Kelvin";
-            this.rbKelvin.UseVisualStyleBackColor = true;
+            this.gbSaida.Controls.Add(this.rbKelvinSaida);
+            this.gbSaida.Controls.Add(this.rbFarenheitSaida);
+            this.gbSaida.Controls.Add(this.rbCelsiusSaida);
+            this.gbSaida.Location = new System.Drawing.Point(233, 68);
+            this.gbSaida.Name = "gbSaida";
+            this.gbSaida.Size = new System.Drawing.Size(141, 115);
+            this.gbSaida.TabIndex = 4;
+            this.gbSaida.TabStop = false;
+            this.gbSaida.Text = "Entrada";
             // 
-            // gpSaida
+            // rbKelvinSaida
             // 
-            this.gpSaida.Controls.Add(this.radioButton1);
-            this.gpSaida.Controls.Add(this.radioButton2);
-            this.gpSaida.Controls.Add(this.rbCelsiusSaida);
-            this.gpSaida.Location = new System.Drawing.Point(236, 75);
-            this.gpSaida.Name = "gpSaida";
-            this.gpSaida.Size = new System.Drawing.Size(141, 115);
-            this.gpSaida.TabIndex = 4;
-            this.gpSaida.TabStop = false;
-            this.gpSaida.Text = "Entrada";
+            this.rbKelvinSaida.AutoSize = true;
+            this.rbKelvinSaida.Location = new System.Drawing.Point(20, 82);
+            this.rbKelvinSaida.Name = "rbKelvinSaida";
+            this.rbKelvinSaida.Size = new System.Drawing.Size(57, 19);
+            this.rbKelvinSaida.TabIndex = 3;
+            this.rbKelvinSaida.TabStop = true;
+            this.rbKelvinSaida.Text = "Kelvin";
+            this.rbKelvinSaida.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbFarenheitSaida
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(20, 82);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(57, 19);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Kelvin";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(20, 57);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(74, 19);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Farenheit";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.rbFarenheitSaida.AutoSize = true;
+            this.rbFarenheitSaida.Location = new System.Drawing.Point(20, 57);
+            this.rbFarenheitSaida.Name = "rbFarenheitSaida";
+            this.rbFarenheitSaida.Size = new System.Drawing.Size(74, 19);
+            this.rbFarenheitSaida.TabIndex = 2;
+            this.rbFarenheitSaida.TabStop = true;
+            this.rbFarenheitSaida.Text = "Farenheit";
+            this.rbFarenheitSaida.UseVisualStyleBackColor = true;
+            this.rbFarenheitSaida.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // rbCelsiusSaida
             // 
@@ -190,6 +191,7 @@
             this.btnLimpar.TabIndex = 5;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // frmConversorTemperatura
             // 
@@ -197,8 +199,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 310);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.gpSaida);
-            this.Controls.Add(this.gpEntrada);
+            this.Controls.Add(this.gbSaida);
+            this.Controls.Add(this.gbEntrada);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.lblResultado);
@@ -206,12 +208,13 @@
             this.Controls.Add(this.lblValor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConversorTemperatura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Conversor de Temperatura";
             this.Load += new System.EventHandler(this.frmConversorTemperatura_Load);
-            this.gpEntrada.ResumeLayout(false);
-            this.gpEntrada.PerformLayout();
-            this.gpSaida.ResumeLayout(false);
-            this.gpSaida.PerformLayout();
+            this.gbEntrada.ResumeLayout(false);
+            this.gbEntrada.PerformLayout();
+            this.gbSaida.ResumeLayout(false);
+            this.gbSaida.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,12 +226,12 @@
         private RadioButton rbCelsius;
         private Button btnConverter;
         private TextBox txtValor;
-        private GroupBox gpEntrada;
+        private GroupBox gbEntrada;
         private RadioButton rbFarenheit;
         private RadioButton rbKelvin;
-        private GroupBox gpSaida;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private GroupBox gbSaida;
+        private RadioButton rbKelvinSaida;
+        private RadioButton rbFarenheitSaida;
         private RadioButton rbCelsiusSaida;
         private Label lblResultado;
         private TextBox txtResultado;

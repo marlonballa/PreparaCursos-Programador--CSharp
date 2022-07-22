@@ -37,6 +37,7 @@ namespace PrimeiroAplicativo04
             this.btnTaduada = new System.Windows.Forms.Button();
             this.btnMediaAluno = new System.Windows.Forms.Button();
             this.pnlUserInformations = new System.Windows.Forms.Panel();
+            this.lblIntermediario = new System.Windows.Forms.Label();
             this.lblMediaAluno = new System.Windows.Forms.Label();
             this.lblTabuada = new System.Windows.Forms.Label();
             this.lblVisualizadorImagem = new System.Windows.Forms.Label();
@@ -48,13 +49,13 @@ namespace PrimeiroAplicativo04
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblAvancadoI = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblIntermediario = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lnlNomeAluno = new System.Windows.Forms.Label();
             this.circularPictureBox1 = new PrimeiroAplicativo04.CircularPictureBox();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.btnConversorTemperatura = new System.Windows.Forms.Button();
             this.pnlUserInformations.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -158,6 +159,18 @@ namespace PrimeiroAplicativo04
             this.pnlUserInformations.Size = new System.Drawing.Size(192, 720);
             this.pnlUserInformations.TabIndex = 5;
             this.pnlUserInformations.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlUserInformations_Paint);
+            // 
+            // lblIntermediario
+            // 
+            this.lblIntermediario.AutoSize = true;
+            this.lblIntermediario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(85)))), ((int)(((byte)(152)))));
+            this.lblIntermediario.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIntermediario.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblIntermediario.Location = new System.Drawing.Point(36, 302);
+            this.lblIntermediario.Name = "lblIntermediario";
+            this.lblIntermediario.Size = new System.Drawing.Size(120, 23);
+            this.lblIntermediario.TabIndex = 10;
+            this.lblIntermediario.Text = "Intermediário";
             // 
             // lblMediaAluno
             // 
@@ -270,18 +283,6 @@ namespace PrimeiroAplicativo04
             this.panel2.Size = new System.Drawing.Size(162, 32);
             this.panel2.TabIndex = 10;
             // 
-            // lblIntermediario
-            // 
-            this.lblIntermediario.AutoSize = true;
-            this.lblIntermediario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(85)))), ((int)(((byte)(152)))));
-            this.lblIntermediario.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblIntermediario.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblIntermediario.Location = new System.Drawing.Point(36, 302);
-            this.lblIntermediario.Name = "lblIntermediario";
-            this.lblIntermediario.Size = new System.Drawing.Size(120, 23);
-            this.lblIntermediario.TabIndex = 10;
-            this.lblIntermediario.Text = "Intermediário";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -363,12 +364,23 @@ namespace PrimeiroAplicativo04
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
+            // btnConversorTemperatura
+            // 
+            this.btnConversorTemperatura.Location = new System.Drawing.Point(540, 577);
+            this.btnConversorTemperatura.Name = "btnConversorTemperatura";
+            this.btnConversorTemperatura.Size = new System.Drawing.Size(200, 76);
+            this.btnConversorTemperatura.TabIndex = 8;
+            this.btnConversorTemperatura.Text = "Conversor de Temperatura";
+            this.btnConversorTemperatura.UseVisualStyleBackColor = true;
+            this.btnConversorTemperatura.Click += new System.EventHandler(this.btnConversorTemperatura_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(31)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btnConversorTemperatura);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pnlUserInformations);
@@ -423,5 +435,6 @@ namespace PrimeiroAplicativo04
         private Label lblTabuada;
         private Label lblVisualizadorImagem;
         private Label lblPesFisJur;
+        private Button btnConversorTemperatura;
     }
 }

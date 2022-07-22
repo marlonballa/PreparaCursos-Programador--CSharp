@@ -43,3 +43,4 @@ D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\PreparaCursos-Programador--CSharp\
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\PreparaCursos-Programador--CSharp\C#\PrimeiroAplicativo04\PrimeiroAplicativo04\obj\Debug\net6.0-windows\PrimeiroAplicativo04.pdb
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\PreparaCursos-Programador--CSharp\C#\PrimeiroAplicativo04\PrimeiroAplicativo04\obj\Debug\net6.0-windows\PrimeiroAplicativo04.genruntimeconfig.cache
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\PreparaCursos-Programador--CSharp\C#\PrimeiroAplicativo04\PrimeiroAplicativo04\obj\Debug\net6.0-windows\ref\PrimeiroAplicativo04.dll
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\PreparaCursos-Programador--CSharp\C#\PrimeiroAplicativo04\PrimeiroAplicativo04\obj\Debug\net6.0-windows\PrimeiroAplicativo04.frmConversorTemperatura.resources

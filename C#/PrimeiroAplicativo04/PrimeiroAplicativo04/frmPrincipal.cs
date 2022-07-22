@@ -72,5 +72,12 @@ namespace PrimeiroAplicativo04
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnConversorTemperatura_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmConversorTemperatura frmConversorTemperatura = new frmConversorTemperatura();
+            frmConversorTemperatura.Show();
+        }
     }
 }
