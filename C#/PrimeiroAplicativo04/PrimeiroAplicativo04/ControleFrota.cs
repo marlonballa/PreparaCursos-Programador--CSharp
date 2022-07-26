@@ -17,34 +17,44 @@ namespace PrimeiroAplicativo04
             InitializeComponent();
         }
 
+        //Responsável por especificar os objetos que farão parte que representarão a frota de carros. 
         public class Veiculo
         {
             private string modelo, placa, Km;
 
-            public void gravarModelo(string modelo)
-            {
-                this.modelo = modelo;
-            }
+            //+++++ INICIO - Informações de Modelo
+                public void gravarModelo(string modelo) { this.modelo = modelo;}
+                public string mostrarModelo() { return modelo; }
+            //+++++ FIM - Informações de Modelo
 
-            public string mostrarModelo()
-            {
-                return modelo;
-            }
+            //+++++ INICIO - Informações de Placa
+                public void gravarPlaca(string placa) { this.placa = placa; }
+                public string mostrarPlaca() { return placa; }
+            //+++++ FIM - Informações de Placa
+
+            //+++++ INICIO - Informações de KM
+                public void gravarKm(string Km) { this.Km = Km; }
+                public string mostrarKm() { return Km; }
+            //+++++ FIM - Informações de KM
+
+
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            //Instanciando a classe Veiculos
             Veiculo newCar = new Veiculo();
 
             //Pega as informações que o usuário insere. 
             newCar.gravarModelo(txtModelo.Text);
-            newCar.placa = txtPlaca.Text;
-            newCar.Km = txtKM.Text;
+            newCar.gravarPlaca(txtPlaca.Text);
+            newCar.gravarKm(txtKM.Text);
 
             //Apresenta as informações na tela.
-            txtVeiculos.Text += newCar.modelo + "\t";
-            txtVeiculos.Text += newCar.placa + "\t";
-            txtVeiculos.Text += newCar.Km + "\r\n";
+            txtVeiculos.Text += newCar.mostrarModelo() + "\t";
+            txtVeiculos.Text += newCar.mostrarPlaca() + "\t";
+            txtVeiculos.Text += newCar.mostrarKm() + "\r\n";
 
         }
 
