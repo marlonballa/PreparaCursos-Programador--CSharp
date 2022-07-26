@@ -210,6 +210,7 @@
             this.Name = "frmConversorTemperatura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Conversor de Temperatura";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmConversorTemperatura_FormClosed);
             this.Load += new System.EventHandler(this.frmConversorTemperatura_Load);
             this.gbEntrada.ResumeLayout(false);
             this.gbEntrada.PerformLayout();

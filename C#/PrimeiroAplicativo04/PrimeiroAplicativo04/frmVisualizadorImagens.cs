@@ -72,5 +72,11 @@ namespace PrimeiroAplicativo04
                 picboxImagem.SizeMode = PictureBoxSizeMode.Normal; 
             }
         }
+
+        private void frmVisualizadorImagens_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal.Show();
+        }
     }
 }

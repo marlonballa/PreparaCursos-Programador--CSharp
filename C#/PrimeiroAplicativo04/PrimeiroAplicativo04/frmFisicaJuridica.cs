@@ -46,5 +46,11 @@ namespace PrimeiroAplicativo04
         {
             
         }
+
+        private void frmFisicaJuridica_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal.Show();
+        }
     }
 }

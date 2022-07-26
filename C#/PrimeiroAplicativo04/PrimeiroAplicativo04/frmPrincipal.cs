@@ -79,5 +79,11 @@ namespace PrimeiroAplicativo04
             frmConversorTemperatura frmConversorTemperatura = new frmConversorTemperatura();
             frmConversorTemperatura.Show();
         }
+
+        private void btnControleFrota_Click(object sender, EventArgs e)
+        {
+            frmControleFrota frmControleFrota = new frmControleFrota();
+            frmControleFrota.Show();
+        }
     }
 }

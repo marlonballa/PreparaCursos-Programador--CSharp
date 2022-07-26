@@ -183,6 +183,7 @@
             this.Name = "frmFisicaJuridica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pessoa Física x Pessoa Jurídica";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFisicaJuridica_FormClosing);
             this.pnlPessoaFisica.ResumeLayout(false);
             this.pnlPessoaFisica.PerformLayout();
             this.pnlPessoaJuridica.ResumeLayout(false);

@@ -58,18 +58,22 @@ namespace PrimeiroAplicativo04
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            foreach (Control Componente in this.Controls)
-            {
-                if (Componente is TextBox) { (Componente as TextBox).Clear(); }
-            }
+            txtValor.Text = "";
+            txtResultado.Text = "";
             foreach (Control Componente in gbEntrada.Controls)
             {
-                if (Componente is RadioButton) { (Componente as RadioButton).Checked = false; }
+                (Componente as RadioButton).Checked = false;
             }
             foreach (Control Componente in gbSaida.Controls)
             {
-                if (Componente is RadioButton) { (Componente as RadioButton).Checked = false; }
+                (Componente as RadioButton).Checked = false;
             }
+        }
+
+        private void frmConversorTemperatura_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal.Show();
         }
     }
 }

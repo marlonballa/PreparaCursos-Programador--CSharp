@@ -56,6 +56,7 @@ namespace PrimeiroAplicativo04
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnConversorTemperatura = new System.Windows.Forms.Button();
+            this.btnControleFrota = new System.Windows.Forms.Button();
             this.pnlUserInformations.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -66,7 +67,7 @@ namespace PrimeiroAplicativo04
             // 
             this.btnMostrarMensagem.Image = global::PrimeiroAplicativo04.Properties.Resources.chatting;
             this.btnMostrarMensagem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMostrarMensagem.Location = new System.Drawing.Point(540, 158);
+            this.btnMostrarMensagem.Location = new System.Drawing.Point(546, 42);
             this.btnMostrarMensagem.Margin = new System.Windows.Forms.Padding(4);
             this.btnMostrarMensagem.Name = "btnMostrarMensagem";
             this.btnMostrarMensagem.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
@@ -81,7 +82,7 @@ namespace PrimeiroAplicativo04
             // 
             this.btnFisJur.Image = global::PrimeiroAplicativo04.Properties.Resources.caixa_de_selecao;
             this.btnFisJur.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnFisJur.Location = new System.Drawing.Point(540, 242);
+            this.btnFisJur.Location = new System.Drawing.Point(546, 126);
             this.btnFisJur.Margin = new System.Windows.Forms.Padding(4);
             this.btnFisJur.Name = "btnFisJur";
             this.btnFisJur.Padding = new System.Windows.Forms.Padding(0, 10, 0, 15);
@@ -96,7 +97,7 @@ namespace PrimeiroAplicativo04
             // 
             this.btnVisualizadorImagens.Image = global::PrimeiroAplicativo04.Properties.Resources.galeria_de_imagens;
             this.btnVisualizadorImagens.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnVisualizadorImagens.Location = new System.Drawing.Point(540, 326);
+            this.btnVisualizadorImagens.Location = new System.Drawing.Point(546, 210);
             this.btnVisualizadorImagens.Margin = new System.Windows.Forms.Padding(4);
             this.btnVisualizadorImagens.Name = "btnVisualizadorImagens";
             this.btnVisualizadorImagens.Padding = new System.Windows.Forms.Padding(0, 10, 0, 15);
@@ -111,7 +112,7 @@ namespace PrimeiroAplicativo04
             // 
             this.btnTaduada.Image = global::PrimeiroAplicativo04.Properties.Resources.calculadora;
             this.btnTaduada.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnTaduada.Location = new System.Drawing.Point(540, 410);
+            this.btnTaduada.Location = new System.Drawing.Point(546, 294);
             this.btnTaduada.Margin = new System.Windows.Forms.Padding(4);
             this.btnTaduada.Name = "btnTaduada";
             this.btnTaduada.Padding = new System.Windows.Forms.Padding(0, 10, 0, 15);
@@ -126,7 +127,7 @@ namespace PrimeiroAplicativo04
             // 
             this.btnMediaAluno.Image = global::PrimeiroAplicativo04.Properties.Resources.calculadora;
             this.btnMediaAluno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMediaAluno.Location = new System.Drawing.Point(540, 494);
+            this.btnMediaAluno.Location = new System.Drawing.Point(546, 378);
             this.btnMediaAluno.Margin = new System.Windows.Forms.Padding(4);
             this.btnMediaAluno.Name = "btnMediaAluno";
             this.btnMediaAluno.Padding = new System.Windows.Forms.Padding(0, 10, 0, 15);
@@ -366,7 +367,7 @@ namespace PrimeiroAplicativo04
             // 
             // btnConversorTemperatura
             // 
-            this.btnConversorTemperatura.Location = new System.Drawing.Point(540, 577);
+            this.btnConversorTemperatura.Location = new System.Drawing.Point(546, 461);
             this.btnConversorTemperatura.Name = "btnConversorTemperatura";
             this.btnConversorTemperatura.Size = new System.Drawing.Size(200, 76);
             this.btnConversorTemperatura.TabIndex = 8;
@@ -374,12 +375,23 @@ namespace PrimeiroAplicativo04
             this.btnConversorTemperatura.UseVisualStyleBackColor = true;
             this.btnConversorTemperatura.Click += new System.EventHandler(this.btnConversorTemperatura_Click);
             // 
+            // btnControleFrota
+            // 
+            this.btnControleFrota.Location = new System.Drawing.Point(546, 543);
+            this.btnControleFrota.Name = "btnControleFrota";
+            this.btnControleFrota.Size = new System.Drawing.Size(200, 77);
+            this.btnControleFrota.TabIndex = 9;
+            this.btnControleFrota.Text = "Controle de Frota";
+            this.btnControleFrota.UseVisualStyleBackColor = true;
+            this.btnControleFrota.Click += new System.EventHandler(this.btnControleFrota_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(31)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btnControleFrota);
             this.Controls.Add(this.btnConversorTemperatura);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnFechar);
@@ -436,5 +448,6 @@ namespace PrimeiroAplicativo04
         private Label lblVisualizadorImagem;
         private Label lblPesFisJur;
         private Button btnConversorTemperatura;
+        private Button btnControleFrota;
     }
 }

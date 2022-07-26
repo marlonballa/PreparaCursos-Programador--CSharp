@@ -124,6 +124,7 @@
             this.Name = "frmVisualizadorImagens";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Visualizador de Imagens";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmVisualizadorImagens_FormClosing);
             this.Load += new System.EventHandler(this.frmVisualizadorImagens_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picboxMoldura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxImagem)).EndInit();

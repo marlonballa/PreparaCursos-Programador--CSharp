@@ -4,6 +4,12 @@
     <Compile Update="CircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="ControleFrota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CustomTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="frmConversorTemperatura.cs">
       <SubType>Form</SubType>
     </Compile>

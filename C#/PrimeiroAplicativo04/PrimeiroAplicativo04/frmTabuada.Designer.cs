@@ -120,6 +120,7 @@
             this.Name = "frmTabuada";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vamos Calcular: Tabuada";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTabuada_FormClosing);
             this.Load += new System.EventHandler(this.frmTabuada_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

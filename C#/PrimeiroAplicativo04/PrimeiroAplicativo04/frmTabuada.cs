@@ -78,5 +78,11 @@ namespace PrimeiroAplicativo04
         {
             txtResultado.Enabled = false;
         }
+
+        private void frmTabuada_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal.Show();
+        }
     }
 }
